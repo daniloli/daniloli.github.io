@@ -36,11 +36,11 @@ function selecionarPoltrona(valor){
                         y++;
                         break;
                     case 2:
-                        alert("Mas.. mas..:c");
+                        alert("Mas.. mas.. :c");
                         y++;
                         break;
                     case 3:
-                        alert("Parabéns você achou o tesouro...:c");
+                        alert("Parabéns você achou o tesouro... :c");
                 }
 
 
