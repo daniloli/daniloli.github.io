@@ -1,5 +1,5 @@
 
-var poltronas=[true,true,true,true,true,true,true,true,true];
+var poltronas=[false,true,false,true,false,true,false,true,false];
 var imagens =document.getElementsByTagName("img");
 var x=1,y=0;
 var flag=false;
@@ -11,7 +11,7 @@ function carregarPoltronas(){
             imagens[i].src = "img/closed.jpg";
             //alert(imagens[i].onclick)
         }else{
-            imagens[i].src = "img/open.jpg";
+            //imagens[i].src = "img/open.jpg";
         }
         
         
@@ -44,11 +44,11 @@ function selecionarPoltrona(valor){
                         alert("Parabéns você achou o tesouro... :c");
                 }
 
-
+                poltronas[valor]=false;
             }else{
                 imagens[valor].src = "img/closed.jpg";
             }
-            poltronas[valor]=false;
+            
         }else{
             
             
