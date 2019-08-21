@@ -1,7 +1,8 @@
 
-var poltronas=[true,true,true,true,true,true,true];
+var poltronas=[true,true,true,true,true,true,true,true,true];
 var imagens =document.getElementsByTagName("img");
-var x=1,y=0;;
+var x=1,y=0;
+var flag=false;
 function carregarPoltronas(){
     
     
@@ -55,6 +56,13 @@ function selecionarPoltrona(valor){
 
         }
     }else{
+        if(flag){
+
+            // if(){
+                 //imagens[valor].src = "img/closed.jpg";
+                 
+            // }
+        }
         switch (x){
             case 1:
                 alert("Você já abriu essa porta!");
@@ -72,8 +80,15 @@ function selecionarPoltrona(valor){
                 alert("...");
                 
                 break;
-            case 20:
-                alert("Parabéns cara você ganhou... feliz?");
+            case 5:
+                alert("Parou ne?...");
+                break;
+            case 6:
+                alert("Ok... Vamos brincar entao");
+                flag=true;
+                break;
+            //case 20:
+                //alert("Parabéns cara você ganhou... feliz?");
         }
         x++;
     }
