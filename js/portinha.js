@@ -28,20 +28,22 @@ function selecionarPoltrona(valor){
             if (quer){
                 switch(y){
                     case 0:
-                        alert("");
+                        alert("Errou, porque o tesouro é você");
                         y++;
                         break;
                     case 1:
-                        alert("");
+                        alert("Não tem nenhum tesouro atrás das portas... o tesouro é você!");
                         y++;
                         break;
                     case 2:
-                        alert("");
+                        alert("Mas.. mas..:c");
                         y++;
                         break;
                     case 3:
-                        alert("");
+                        alert("Parabéns você achou o tesouro...:c");
                 }
+
+
             }else{
                 imagens[valor].src = "img/closed.jpg";
             }
@@ -56,23 +58,24 @@ function selecionarPoltrona(valor){
         switch (x){
             case 1:
                 alert("Você já abriu essa porta!");
-                x++;
+                
                 break;
             case 2:
-                alert("Essa porta parece aberta por acaso?");
-                x++;
+                alert("Essa porta parece fechada por acaso?");
+                
                 break;
             case 3:
                 alert("Sério?...");
-                x++;
+                
                 break;
             case 4:
                 alert("...");
-                x++;
+                
                 break;
             case 20:
                 alert("Parabéns cara você ganhou... feliz?");
         }
+        x++;
     }
 }
 function verificarPoltronas(){
