@@ -3,7 +3,7 @@ body {background-color: aliceblue;}
 div {
     text-align: center;
 }
-img{
+img.view{
     height: 300px;
     width: 230px;
 }
